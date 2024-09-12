@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>虎扑图片屏蔽器</title>
+  <style>
+    body {
+      width: 200px;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+    }
+    .switch {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    #toggleSwitch {
+      margin-right: 10px;
+    }
+    button {
+      width: 100%;
+      padding: 5px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="switch">
+    <input type="checkbox" id="toggleSwitch">
+    <label for="toggleSwitch">启用图片屏蔽</label>
+  </div>
+  <button id="optionsButton">打开屏蔽图片列表</button>
+  <script src="popup.js"></script>
+</body>
+</html>

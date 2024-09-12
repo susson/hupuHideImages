@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "虎扑图片屏蔽器",
+  "version": "1.2",
+  "description": "屏蔽特定图片在 https://bbs.hupu.com/",
+  "permissions": ["storage", "contextMenus"],
+  "host_permissions": ["https://bbs.hupu.com/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://bbs.hupu.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "48": "icon.png"
+  },
+  "options_page": "options.html"
+}

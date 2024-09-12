@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>虎扑图片屏蔽器选项</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: left;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    img {
+      max-width: 100px;
+      max-height: 100px;
+    }
+    .delete-btn {
+      background-color: #f44336;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+    #addForm {
+      margin-top: 20px;
+    }
+    #addUrl {
+      width: 300px;
+      padding: 5px;
+    }
+    #addButton {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>屏蔽图片 URL 列表</h1>
+  <table id="urlTable">
+    <thead>
+      <tr>
+        <th>序号</th>
+        <th>URL</th>
+        <th>预览图</th>
+        <th>操作</th>
+      </tr>
+    </thead>
+    <tbody id="urlList"></tbody>
+  </table>
+  <div id="addForm">
+    <input type="text" id="addUrl" placeholder="输入要屏蔽的图片URL">
+    <button id="addButton">添加</button>
+  </div>
+  <script src="options.js"></script>
+</body>
+</html>
